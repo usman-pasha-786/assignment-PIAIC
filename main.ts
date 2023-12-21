@@ -59,11 +59,12 @@
 // because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence
 // describing what the program does.
 
-//simple program by useing backtick and use variable in it
+//  simple program by useing backtick and use variable in it
 // let favorite_number = 10;
 // let message = `Number ${favorite_number} is my favourite number!`;
 // console.log(message);
 
+// date 15/12/2023
 // program of operators
 // let addition8 = 4 + 4;
 // console.log(addition8);
@@ -73,3 +74,58 @@
 // console.log(multiplication8);
 // let division8 = 16 / 2;
 // console.log(division8);
+
+
+// 11. Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
+// let names:string[] = ["anika","mustafa","eisha"];
+// console.log(names[0]);
+// console.log(names[1]);
+// console.log(names[2]);
+
+
+// 12. Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message
+// should be the same, but each message should be personalized with the person’s name.
+// let names:string[] = ["anika","mustafa","eisha"];
+// let message = "You are invited to dinner.";
+// console.log(names[0]+","+message);
+// console.log(names[1]+","+message);
+// console.log(names[2]+","+message);
+
+
+// 13. Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list
+// // to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
+// let vehicles:string[] = [
+//     "Civic",
+//     "Corrolla",
+//     "BMW",
+//     "Mercedez Benz"
+// ];
+// vehicles.map((i)=>
+// console.log(`I would like to own a ${i}.`))
+
+
+// 14. Guest List: If you could invite anyone, living or deceased, to dinner, who would you invite? Make a list that includes at least three people you’d like to
+// invite to dinner. Then use your list to print a message to each person, inviting them to dinner.
+// let Guest:string[] = ["anika","mustafa","eisha"];
+// Guest.map((i)=>
+// console.log(`Dear ${i}, You are cordially invited to a dinner.`))
+
+// 15. Changing Guest List: You just heard that one of your guests can’t make the
+// dinner, so you need to send out a new set of invitations. You’ll have to think of
+// someone else to invite.
+// • Start with your program from Exercise 14. Add a print statement at the
+// end of your program stating the name of the guest who can’t make it.
+// • Modify your list, replacing the name of the guest who can’t make it with
+// the name of the new person you are inviting.
+// • Print a second set of invitation messages, one for each person who is still
+// in your list.
+
+// let Guest:string[] = ["anika","mustafa","eisha"];
+// // i heard that mustafa can not make the dinner with us
+// let outGuest = "mustafa";
+// console.log(`${outGuest}, can not make the dinner with us.`)
+// // i want to invite vidia for dinner thatswhy i want to replacing the guest
+// let inGuest = "vidia";
+// Guest[Guest.indexOf(outGuest)] = inGuest
+// Guest.map((i)=>
+// console.log(`Dear ${i},You are cordially invited to dinner.`)) 
