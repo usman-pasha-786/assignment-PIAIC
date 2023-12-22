@@ -129,3 +129,104 @@
 // Guest[Guest.indexOf(outGuest)] = inGuest
 // Guest.map((i)=>
 // console.log(`Dear ${i},You are cordially invited to dinner.`)) 
+
+
+// 16. More Guests: You just found a bigger dinner table, so now more space is
+// available. Think of three more guests to invite to dinner.
+// • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a
+// bigger dinner table.
+// • Add one new guest to the beginning of your array.
+// • Add one new guest to the middle of your array.
+// • Use append() to add one new guest to the end of your list.
+// • Print a new set of invitation messages, one for each person in your list.
+
+// let Guest:string[] = ["anika","vidia","eisha"];
+// //Informing the guest that i found a bigger dinner table 
+// Guest.map((i)=>console.log(`Dear ${i},I found a bigger dinner table.`));
+// //add the guest in the beginning
+// let guestFirst = "Gia";
+// Guest.unshift(guestFirst);
+// //adding guest in the middle
+// let guestMiddle ="bubbi";
+// let middleIndex = Guest.length / 2
+// Guest.splice(middleIndex,0,guestMiddle)
+// console.log(Guest)
+// //adding last guest
+// let guestLast = "meleny"
+// Guest.push(guestLast)
+// Guest.map((item)=>console.log(`Dear ${item}, You are still invited to a dinner.`))
+// console.log(Guest)
+
+
+// 17. Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
+// • Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
+// • Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print
+// a message to that person letting them know you’re sorry you can’t invite them to dinner.
+// • Print a message to each of the two people still on your list, letting them know they’re still invited.
+// • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end
+// of your program.
+
+// let Guest:string[] =[ 'Gia', 'anika', 'bubbi', 'vidia', 'eisha', 'meleny' ]
+// console.log("I can invite only two people for dinner.")
+// while (Guest.length > 2){
+// let removeGuest = Guest.pop()
+// console.log(`Dear ${removeGuest}, you are not invited to dinner.`)
+// }
+// Guest.map((items)=>
+// console.log(`Dear ${items}, You are still ivited to dinner!`)
+// )
+// Guest.pop()
+// Guest.pop()
+// console.log(Guest)
+
+
+// 18. Seeing the World: Think of at least five places in the world you’d like to visit.
+
+// • Store the locations in a array. Make sure the array is not in alphabetical order.
+
+// •1 Print your array in its original order.
+
+// 2 Print your array in alphabetical order without modifying the actual list.
+
+// 3 Show that your array is still in its original order by printing it.
+
+// 4 Print your array in reverse alphabetical order without changing the order of the original list.
+
+// 5 Show that your array is still in its original order by printing it again.
+
+// 6 Reverse the order of your list. Print the array to show that its
+// order has changed.
+
+// • Reverse the order of your list again. Print the list to show it’s back to its original order.
+
+// • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
+
+// • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+
+// let countries: string[] = ["pakistan", "india", "america", "china", "Zimbabwy"];
+// console.log("1 array in its original order.")
+// console.log(countries)
+// console.log("\n2 array in alphabetical order without modifying the actual list.")
+// console.log([...countries].sort())
+// console.log("\n3 array is still in its original order")
+// console.log(countries)
+// // 4 Print your array in reverse alphabetical order without changing the order of the original list.
+// console.log("\n4 array in reverse alphabetical order without changing the order of the original list.")
+// console.log([...countries].sort().reverse())
+
+// console.log("\n5 array is still in its original order by printing it again.")
+// console.log(countries)
+// console.log("\n6 Reverse the order of your list. Print the array to show that its order has changed.")
+// console.log(countries.sort())
+
+// 19. Dinner Guests: Working with one of the programs from Exercises 14 through 18, print a message indicating the number
+// of people you are inviting to dinner.
+
+// let Guest:string[] = ["anika","mustafa","eisha"];
+// console.log(`i had invited ${Guest.length} guests to the dinner!`)
+
+
+// 20. Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything
+// else you’d like. Write a program that creates a list containing these items.
+// let cities:string[] = ["karachi","Lahore","Islamabad","Quetta"];
+// cities.map((items)=> console.log(items));
