@@ -230,3 +230,264 @@
 // else you’d like. Write a program that creates a list containing these items.
 // let cities:string[] = ["karachi","Lahore","Islamabad","Quetta"];
 // cities.map((items)=> console.log(items));
+
+// 21. They think of something you could store in a TypeScript Object. Write a program that creates Objects containing these items.
+// let student1 = {
+//     name: "Mustafa Pasha",
+//     age: 18,
+//     course: "Ai, Web3, Metaverse"
+// };
+// let student2 = {
+//     name: "Anika Usman",
+//     age: 19,
+//     course: "Ai, Web3, Metaverse"
+// };
+// let student3 = {
+//     name: "Usman",
+//     age: 45,
+//     course: "Ai, Web3, Metaverse"
+// };
+// console.log(student1.name)
+// console.log(student2.name)
+// console.log(student3.name)
+// const arr =[{ name: "Mustafa Pasha",
+// age: 18,
+// course: "Ai, Web3, Metaverse"}]
+// arr.push(student2)
+// arr.push(student3)
+// console.log(arr)
+
+
+
+// 22. Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs
+// to produce an index error. Make sure you correct the error before closing the program.
+// let countries: string[] = 
+// ["pakistan",
+// "india",
+// "america",
+// "china", 
+// "Zimbabwy"];
+// console.log(countries[6]);
+// console.log(countries[0]);
+
+
+// 23. Conditional Tests: Write a series of conditional tests. Print a statement
+// describing each test and your prediction for the results of each test. Your code
+// should look something like this:
+// let car = 'subaru';
+// console.log("Is car == 'subaru'? I predict True.")
+// console.log(car == 'subaru')
+// • Look closely at your results, and make sure you understand why each line evaluates to True or False.
+// • Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
+
+// let car = "subaru";
+// console.log(car == "subaru")  //True
+// console.log(car == "Honda")  //False
+// console.log(car === "subaru")  //True
+// console.log(car === "SubarU")  //False
+// console.log(car !== "Toyota")  //True
+// console.log(car !== "subaru")  //False
+// console.log(car != "Mazda")  //True
+// console.log(car != "subaru")  //False
+// console.log(car != "SUBARU")  //True
+// console.log(car != "subaru")  //False
+
+
+
+
+// 24. More Conditional Tests: You don’t have to limit the number of tests you create to 10. If you want to try more comparisons, write more tests. Have at least one True and one False result for each of the following:
+// • Tests for equality and inequality with strings
+// • Tests using the lower case function
+// • Numerical tests involving equality and inequality, greater than and less than, greater than or equal to, and less than or equal to
+// • Tests using "and" and "or" operators
+// • Test whether an item is in a array
+// • Test whether an item is not in a array
+
+// let str1 = "Hello World";
+// let str2 = "hello world";
+// console.log(str1 === str2); //False
+// console.log(str1 !== str2); // True
+
+// let text1 = "Hello World";
+// let text2 = "hello world";
+// console.log(text1.toLowerCase() === text2)
+// console.log(text1.toLowerCase() === text2.toUpperCase())
+
+// let num1 = 100;
+// let num2 = 50;
+// console.log(num1 === num2) //False
+// console.log(num1 !== num2) //True
+// console.log(num1 > num2) //True
+// console.log(num1 < num2) //False
+// console.log(num1 >= num2) //True
+// console.log(num1 <= num2) //False
+
+// let a = 50;
+// let b = 100;
+// let c = 200;
+// console.log(a < b && b < c); //both conditions are true. True
+// console.log(a > b || b < c); //One condition is true.True
+// console.log(a < b && b > c); //One condition is fasle . False
+// console.log(a > b || b > c); // Both conditions are false. False
+
+// let countries:string[] = ["pakistan","india","china","iran","afghanistan"]
+// console.log(countries.includes("china"));
+// console.log(countries.includes("usa"));
+
+// let countries:string[] = ["pakistan","india","china","iran","afghanistan"]
+// console.log(!countries.includes("usa"))
+// console.log(!countries.includes("pakistan"))
+
+
+
+// 25. Alien Colors #1: Imagine an alien was just shot down in a game. Create a
+// variable called alien_color and assign it a value of 'green', 'yellow', or 'red'.
+// • Write an if statement to test whether the alien’s color is green. If it is, print
+// a message that the player just earned 5 points.
+// • Write one version of this program that passes the if test and another that
+// fails. (The version that fails will have no output.)
+
+// let alien_color = "green";
+// if ( alien_color === "green"){
+//     console.log("Congratulation! You have earn 5 points")
+// }
+
+// alien_color = "blue";
+// if ( alien_color === "green"){
+    // console.log("You have earned 5 points")
+// }
+
+
+
+// 26. Alien Colors #2: Choose a color for an alien as you did in Exercise 25, and
+// write an if-else chain.
+// • If the alien’s color is green, print a statement that the player just earned 5 points for shooting the alien.
+// • If the alien’s color isn’t green, print a statement that the player just earned 10 points.
+// • Write one version of this program that runs the if block and another that runs the else block.
+
+// let alien_color = "green";
+// if ( alien_color === "green"){
+//     console.log("Congratulation! You have earn 5 points");
+// }else{
+//     console.log("Congratulation! You have earn 10 points");
+// }
+
+// alien_color = "blue";
+// if ( alien_color === "green"){
+//     console.log("Congratulation! You have earn 5 points");
+// }else{
+//     console.log("Congratulation! You have earn 10 points");
+// }
+
+
+
+
+// 27. Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
+// • If the alien is green, print a message that the player earned 5 points.
+// • If the alien is yellow, print a message that the player earned 10 points.
+// • If the alien is red, print a message that the player earned 15 points.
+// • Write three versions of this program, making sure each message is printed for the appropriate color alien.
+
+
+// 1st version
+// let alien_color = "green";
+// if ( alien_color === "green"){
+//     console.log("Congratulation! You have earn 5 points");
+// }else if( alien_color === "yellow"){
+//     console.log("Congratulation! You have earn 10 points");
+// }else if( alien_color === "red"){
+//     console.log("Congratulation! You have earn 15 points");
+// }else{
+//     console.log("Not found any color");
+// }
+
+// 2nd version
+// alien_color = "yellow";
+// if ( alien_color === "green"){
+//     console.log("Congratulation! You have earn 5 points");
+// }else if( alien_color === "yellow"){
+//     console.log("Congratulation! You have earn 10 points");
+// }else if( alien_color === "red"){
+//     console.log("Congratulation! You have earn 15 points");
+// }else{
+//     console.log("Not found any color");
+// }
+
+// 3rd version
+// alien_color = "red";
+// if ( alien_color === "green"){
+//     console.log("Congratulation! You have earn 5 points");
+// }else if( alien_color === "yellow"){
+//     console.log("Congratulation! You have earn 10 points");
+// }else if( alien_color === "red"){
+//     console.log("Congratulation! You have earn 15 points");
+// }else{
+//     console.log("Not found any color");
+// }
+
+// 28. Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
+// • If the person is less than 2 years old, print a message that the person is a baby.
+// if person < 2:
+// console.log("baby");
+// • If the person is at least 2 years old but less than 4, print a message that the person is a toddler.
+// • If the person is at least 4 years old but less than 13, print a message that the person is a kid.
+// • If the person is at least 13 years old but less than 20, print a message that the person is a teenager.
+// • If the person is at least 20 years old but less than 65, print a message that the person is an adult.
+// • If the person is age 65 or older, print a message that the person is an elder.
+
+// let person = 2;
+// if(person < 2){
+//     console.log("person is baby!");
+// }
+// else if(person >=2 && person < 4){
+//     console.log("person is toddler.");
+// }
+// else if(person >= 4 && person < 13){
+//     console.log("person is Kid.");
+// }
+// else if(person >= 13 && person < 20){
+//     console.log("person is teenager.");
+// }
+// else if(person >= 20 && person < 65){
+//     console.log("person is Adult.");
+// }
+// else{
+//     console.log("person is elder");
+// }
+
+
+// 29. Favorite Fruit: Make a array of your favorite fruits, and then write a series of independent if statements that check for certain fruits in your array.
+// • Make a array of your three favorite fruits and call it favorite_fruits.
+// • Write five if statements. Each should check whether a certain kind of fruit is in your array. If the fruit is in your array, the if block should print a statement,
+// such as You really like bananas!
+
+// let favorite_fruits:string[] = ["apple","mango","banana"];
+// if(favorite_fruits.includes("apple")){
+//     console.log("I really like apples.");
+// }if(favorite_fruits.includes("mango")){
+//     console.log("I love mangoes.");
+// }if(favorite_fruits.includes("banana")){
+//     console.log("I like banana flavour.");
+// }if(favorite_fruits.includes("kiwi")){
+//     console.log("I like kiwies.");
+// }if(favorite_fruits.includes("cherry")){
+//     console.log("i want to eat cherries.");
+// }
+
+
+// 30. Hello Admin: Make a array of five or more usernames, including the name 'admin'. Imagine you are writing code that will print a greeting to each user
+// after they log in to a website. Loop through the array, and print a greeting to each user:
+// • If the username is 'admin', print a special greeting, such as Hello admin, would you like to see a status report?
+// • Otherwise, print a generic greeting, such as Hello Eric, thank you for logging in again.
+
+
+// let userNames:string[] = ["admin","mustafa","anika","eisha","bubbi","gia"];
+// for(let i in userNames){
+//     if(userNames[i] === "admin"){
+//         console.log(`Hello Admin, would you like to see status report.`);
+//     }else{
+//         console.log(`Hello ${userNames[i]}, Thank you for logging in again`);
+//     }
+// }
+
+
