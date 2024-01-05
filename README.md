@@ -1,1 +1,4 @@
-it is just checking as i am a new user of github
+i have completed the assignment from PIAIC 
+it is totally built from typescript
+45 exercises has been completed
+
